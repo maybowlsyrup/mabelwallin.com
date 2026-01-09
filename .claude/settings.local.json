@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Path \"c:\\\\src\\\\portfolio\\\\images\" -Force)",
+      "Bash(cmd /c \"mkdir c:\\\\src\\\\portfolio\\\\images 2>nul & echo done\")",
+      "Bash(echo $CLAUDE_CODE_GIT_BASH_PATH)",
+      "Bash(if exist package.json type package.json)",
+      "Bash(test:*)",
+      "Bash(cat:*)",
+      "Bash(npm run dev:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

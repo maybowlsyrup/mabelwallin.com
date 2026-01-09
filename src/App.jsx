@@ -1,0 +1,26 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import Videos from './pages/Videos';
+import Design from './pages/Design';
+import Contact from './pages/Contact';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="portfolio">
+            <Route index element={<Home />} />
+            <Route path="videos" element={<Videos />} />
+            <Route path="designs" element={<Design />} />
+          </Route>
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
