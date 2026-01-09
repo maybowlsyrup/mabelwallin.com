@@ -98,11 +98,12 @@ export default function Videos() {
                 <iframe
                   width="100%"
                   height="100%"
-                  src={`https://www.youtube.com/embed/${selectedVideo.videoId}?autoplay=1&rel=0&modestbranding=1`}
+                  src={`https://www.youtube.com/embed/${selectedVideo.videoId}`}
                   title={selectedVideo.title}
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
+                  referrerPolicy="strict-origin-when-cross-origin"
                   className="rounded-lg"
                 ></iframe>
               </div>
@@ -113,7 +114,7 @@ export default function Videos() {
                   rel="noopener noreferrer"
                   className="text-amber-400 hover:text-amber-500 text-sm"
                 >
-                  Having trouble? Watch on YouTube →
+                  Open on YouTube →
                 </a>
               </div>
             </div>
