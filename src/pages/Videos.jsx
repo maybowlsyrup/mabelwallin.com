@@ -120,19 +120,6 @@ export default function Videos() {
           </div>
         </div>
       )}
-
-      {/* Instructions for adding videos */}
-      <div className="mt-12 bg-slate-dark border border-amber-400/30 rounded-lg p-4 sm:p-6">
-        <h3 className="text-base sm:text-lg font-semibold text-amber-400 mb-2">
-          How to Add Your Videos
-        </h3>
-        <div className="text-gray-300 space-y-2 text-sm sm:text-base">
-          <p>1. Replace the sample video data in the <code className="bg-charcoal-300 px-2 py-1 rounded text-amber-300">videos</code> array</p>
-          <p>2. Add your video files to the <code className="bg-charcoal-300 px-2 py-1 rounded text-amber-300">public</code> folder</p>
-          <p>3. Or use YouTube/Vimeo embed codes by adding iframe elements</p>
-          <p>4. Update thumbnails with screenshots from your videos</p>
-        </div>
-      </div>
     </div>
   );
 }

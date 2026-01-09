@@ -122,19 +122,6 @@ export default function Design() {
           </div>
         </div>
       )}
-
-      {/* Instructions for adding designs */}
-      <div className="mt-12 bg-slate-dark border border-amber-400/30 rounded-lg p-4 sm:p-6">
-        <h3 className="text-base sm:text-lg font-semibold text-amber-400 mb-2">
-          How to Add Your Design Work
-        </h3>
-        <div className="text-gray-300 space-y-2 text-sm sm:text-base">
-          <p>1. Replace the sample design data in the <code className="bg-charcoal-300 px-2 py-1 rounded text-amber-300">designs</code> array</p>
-          <p>2. Add your design images to the <code className="bg-charcoal-300 px-2 py-1 rounded text-amber-300">public</code> folder</p>
-          <p>3. Update the image paths to point to your actual files</p>
-          <p>4. Customize categories and descriptions for each piece</p>
-        </div>
-      </div>
     </div>
   );
 }
