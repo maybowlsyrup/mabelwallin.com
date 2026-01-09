@@ -1,27 +1,27 @@
 export default function Contact() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 px-4">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">contact</h1>
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">contact</h1>
+        <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
           let's connect! hit me up if you want to work together or just chat
         </p>
       </div>
 
       <div className="max-w-2xl mx-auto">
-        <div className="bg-slate-dark rounded-lg p-8 border border-amber-400/30">
+        <div className="bg-slate-dark rounded-lg p-6 sm:p-8 border border-amber-400/30">
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-semibold text-amber-400 mb-4">
+              <h3 className="text-lg sm:text-xl font-semibold text-amber-400 mb-4">
                 get in touch
               </h3>
               <div className="space-y-4">
                 <a
                   href="mailto:mabel@mabelwallin.com"
-                  className="flex items-center gap-3 text-gray-300 hover:text-amber-400 transition-colors"
+                  className="flex items-center gap-3 text-gray-300 hover:text-amber-400 transition-colors text-sm sm:text-base"
                 >
                   <svg
-                    className="w-6 h-6"
+                    className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -33,17 +33,17 @@ export default function Contact() {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <span>mabel@mabelwallin.com</span>
+                  <span className="break-all">mabel@mabelwallin.com</span>
                 </a>
 
                 <a
                   href="https://youtube.com/@MabelWallin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-amber-400 transition-colors"
+                  className="flex items-center gap-3 text-gray-300 hover:text-amber-400 transition-colors text-sm sm:text-base"
                 >
                   <svg
-                    className="w-6 h-6"
+                    className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -56,10 +56,10 @@ export default function Contact() {
                   href="https://tiktok.com/@maebowl"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-gray-300 hover:text-amber-400 transition-colors"
+                  className="flex items-center gap-3 text-gray-300 hover:text-amber-400 transition-colors text-sm sm:text-base"
                 >
                   <svg
-                    className="w-6 h-6"
+                    className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -71,7 +71,7 @@ export default function Contact() {
             </div>
 
             <div className="pt-6 border-t border-charcoal-300">
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-400 text-xs sm:text-sm">
                 based in san diego, ca • probably procrastinating rn
               </p>
             </div>

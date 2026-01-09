@@ -50,15 +50,15 @@ export default function Design() {
   const [selectedDesign, setSelectedDesign] = useState(null);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 px-4">
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">designs</h1>
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">designs</h1>
+        <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto px-4">
           photoshop stuff from class and random projects when i'm bored
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {designs.map((design) => (
           <div
             key={design.id}
@@ -124,11 +124,11 @@ export default function Design() {
       )}
 
       {/* Instructions for adding designs */}
-      <div className="mt-12 bg-slate-dark border border-amber-400/30 rounded-lg p-6">
-        <h3 className="text-lg font-semibold text-amber-400 mb-2">
+      <div className="mt-12 bg-slate-dark border border-amber-400/30 rounded-lg p-4 sm:p-6">
+        <h3 className="text-base sm:text-lg font-semibold text-amber-400 mb-2">
           How to Add Your Design Work
         </h3>
-        <div className="text-gray-300 space-y-2">
+        <div className="text-gray-300 space-y-2 text-sm sm:text-base">
           <p>1. Replace the sample design data in the <code className="bg-charcoal-300 px-2 py-1 rounded text-amber-300">designs</code> array</p>
           <p>2. Add your design images to the <code className="bg-charcoal-300 px-2 py-1 rounded text-amber-300">public</code> folder</p>
           <p>3. Update the image paths to point to your actual files</p>
